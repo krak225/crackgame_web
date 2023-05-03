@@ -1,0 +1,11 @@
+** gestion des temps d'innactivité dans un duel
+
+Chaque 5minute, le programme recherche les duels en cours pour lesquelles aucune question n'a été posée
+select * from duel_question
+
+-- s'il en trouve, il les comptes le temps de minutes d'innactivité, si ce temps es suppérieur à 30min, 
+il vérifie l'état de connexion des deux joueurs
+ - si aucun n'est connecté, annule le duel
+ - si les deux sont connectés, il leur envoie un message pour qu'ils reprennent le jeu
+ - si un seul est connecté, il le considère comme vainqueur et arrète le jeu.
+ 

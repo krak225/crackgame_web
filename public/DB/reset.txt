@@ -1,0 +1,17 @@
+
+truncate duel;
+truncate duel_question;
+truncate duel_score;
+truncate duel_jocker;
+truncate retrait;
+truncate depot;
+truncate conversion;
+truncate abonnement;
+truncate chap;
+truncate chap_score;
+truncate chap_question;
+truncate entrainement;
+
+update users set money=0,total_points_duel=0,score_general=0,statut_connexion="DECONNECTE",statut_abonnement="DESACTIVE",statut_abonnement_chap="DESACTIVE";
+
+

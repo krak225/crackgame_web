@@ -1,0 +1,16 @@
+{
+  "name": "REALTIME_GAME_BY_ARMAND_KOUASSI",
+  "version": "0.0.1",
+  "description": "A realtime game build with socket.io",
+  "dependencies": {
+    "express": "^4.15.2",
+    "formidable": "^1.2.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "mysql": "^2.17.1",
+    "socket.io": "^1.7.3"
+  },
+  "scripts": {
+    "start": "node /var/www/clients/client1/web2/web/public/js/socket-io-server.js"
+  }
+}

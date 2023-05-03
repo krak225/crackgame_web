@@ -1,0 +1,48 @@
+TODOLIST
+- duelistes connecté tenir compte de ceux qui sélectionné leur questions
+- btn suppr sur la liste des questions coté utilisateur
+- a la demande de jocker, arreter le chrono
+- si le perdant à 0 points le vainqueur gagne 50pts
+- si celui qui abandonne a 0pts, le vainqueur gagne 50pts
+- en cas d'égalité, chacun gagne 25 pts
+- gérer les notifications lors des invitations aux duels
+
+- en cas d'interruption brusque, sauvegarder le jeu pendant 30minutes, après quoi:
+	* si un seul des duelistes se reconnecte il est déclaré vainqueur, meme s'il était mené.
+	* si les deux se reconnectent, ils peuvent continuer le duel la ou ils l'ont laissé
+	* si les deux ne se reconnectent pas après 30min, annuler le duel
+
+- frais de souscription en fonction de la dévise
+- au  clique sur jouer chap, rediriger directement vers le chap actif
+- gerer la selection des questions de chap (5 QUESTION) 
+
+- administration des points a gagner chaque jour
+- administration des questionnaires (test et quiz)
+- donner des bonus en fonction des souscriptions duel achetés
+
+
+
+
+
+- jocker duel, 3 par jour (un joueur ne peut réfuser que 3 invitations par jour)
+(jocker duel = refus)
+
+- chacun met 5 questions dans le panier
+
+- chacun répond à 3 questions pour le premier tour
+
+on garde ceux qui ont obtenu 3/3 pour le deuxieme tour
+- chacun répond à 1 question pour le deuxieme tour
+
+
+On garde ceux qui ont donné la bonne réponse pour le 3è tour
+	- chacun répond à 1 question pour le troisieme tour
+
+au 4e tour, chacun répond au nombre de question de son choix jusqu'a vider le panier
+
+	
+on classe par bonne réponse donnée (tenir compte du nombre de question auquel il a répondu)
+
+en cas d'égalité encore, tenir compte de la date de souscription au chap
+
+

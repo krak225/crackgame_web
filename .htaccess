@@ -1,0 +1,12 @@
+<Files .env>
+	Order allow,deny
+	Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  #RewriteRule ^(.*)$ public/$1 [L]
+  #RewriteRule ^public/index\.php/(.*)$ /public/$1 [L,R=301]
+  #RewriteRule ^public/(.*)$ /public/index.php/$1 [L]
+  
+</IfModule>
