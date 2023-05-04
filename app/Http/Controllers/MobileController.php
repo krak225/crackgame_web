@@ -1745,7 +1745,7 @@ class MobileController extends Controller
 		}elseif($type == 6){
 		    
 		    //gains de mes fieuls
-            $sql = 'select * from gain 
+            $sql = 'select *, DATE(gain_date_creation) as gain_date from gain 
             inner join users on users.id = gain.user_id 
             where user_id_parrain ="'.$session_id.'" 
             and DATE(gain_date_creation) in (select DATE(abonnement_date) from abonnement where user_id="'.$session_id.'" ) ';
@@ -1758,9 +1758,11 @@ class MobileController extends Controller
 			foreach($transactions as $transaction){
 
 				//l'entête qui affiche la mois
-				if(!in_array($transaction->transaction_date, $tab_mois)){
+				$month = sprintf("%02d", date_parse($transaction->gain_date)['month']);
+
+				if(!in_array($month, $tab_mois)){
 					$rang = 0;
-					$tab_mois[] = $transaction->transaction_date;
+					$tab_mois[] = $month;
 					
 					$listeTransactions[] = 
 						array(
