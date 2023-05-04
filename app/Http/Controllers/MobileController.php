@@ -1754,7 +1754,26 @@ class MobileController extends Controller
 			
 			$listeTransactions = array();
 			
+			$tab_mois = [];
 			foreach($transactions as $transaction){
+
+				//l'entête qui affiche la mois
+				if(!in_array($transaction->transaction_date, $tab_mois)){
+					$rang = 0;
+					$tab_mois[] = $transaction->transaction_date;
+					
+					$listeTransactions[] = 
+						array(
+							'classementRang' =>"",
+							'classementPseudo' =>"",
+							'classementPhoto' =>"",
+							'classementNote' =>0,
+							'classementDate' =>Stdfn::dateFromDB($transaction->transaction_date),
+						);
+				
+				}
+				
+				$rang++;
 				
 				$listeTransactions[] = 
 					array(
