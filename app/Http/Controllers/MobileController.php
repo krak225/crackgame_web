@@ -1770,7 +1770,7 @@ class MobileController extends Controller
 							'classementPseudo' =>"",
 							'classementPhoto' =>"",
 							'classementNote' =>0,
-							'classementDate' =>Stdfn::dateFromDB($transaction->transaction_date),
+							'classementDate' =>$month. ' ème mois',
 						);
 				
 				}
