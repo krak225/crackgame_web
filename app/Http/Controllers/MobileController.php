@@ -1766,11 +1766,10 @@ class MobileController extends Controller
 					
 					$listeTransactions[] = 
 						array(
-							'classementRang' =>"",
-							'classementPseudo' =>"",
-							'classementPhoto' =>"",
-							'classementNote' =>0,
-							'classementDate' =>$month. ' ème mois',
+							'transactionDate' =>"",
+							'transactionPseudo' =>$month. ' ème mois',
+							'transactionPhoto' =>"",
+							'transactionMontant' =>0
 						);
 				
 				}
